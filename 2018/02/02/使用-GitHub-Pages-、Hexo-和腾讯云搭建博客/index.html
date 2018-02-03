@@ -69,14 +69,14 @@
     
     <div class="banner">
             <div class="blog-title">
-                <a href="/" >notamo</a>
+                <a href="/" >notamo&#39;s blog.</a>
             </div>
             <div class="post-title">
                 <a href="#" class="post-name">使用 GitHub Pages 、Hexo 和腾讯云搭建博客</a>
             </div>
     </div>
     
-    <a class="home-link" href=/>notamo</a>
+    <a class="home-link" href=/>notamo's blog.</a>
 </header>
     <div class="wrapper">
         <div class="site-intro">
@@ -196,7 +196,7 @@
             <main class="main post-page">
     <article class="article-entry">
         <blockquote>
-<p><strong>摘要：</strong>搭建博客的过程和开店铺相仿。为此，我们首先要向有关部门申请营业执照，然后要在合适的地段租下店面，最后还要解决店里的装修问题，从而就可以任意地在店里码放自己的商品。其中，本教程提供的是一种 <strong>Windows</strong> 下的、<strong>不求甚解</strong>的、低成本的解决方案。</p>
+<p><strong>摘要：</strong>搭建博客的过程和开店铺相仿。为此，我们要在合适的地段租下店面，还要解决店里的装修问题，以便在店里码放自己的商品，最后少不了向有关部门申请营业执照。本文使用的是一种 Windows 下的、<strong>不求甚解的</strong>、低成本的解决方案。</p>
 <p><strong>关键字：</strong>个人主页，Github Pages，Hexo，腾讯云</p>
 </blockquote>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><h3 id="一、各部分“工作原理”简介"><a href="#一、各部分“工作原理”简介" class="headerlink" title="一、各部分“工作原理”简介"></a><strong>一、各部分“工作原理”简介</strong></h3><ul>
@@ -236,7 +236,7 @@
 <li><p>输入此前设置的密码，即可完成连接。</p>
 </li>
 </ul>
-<p><strong>5. 设置用户信息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 设置你的用户名</span><br><span class="line">git config --global user.name &quot;yourname&quot;  </span><br><span class="line"># 设置你的邮箱</span><br><span class="line">git config --global user.email &quot;yourmail@gmail.com&quot;</span><br></pre></td></tr></table></figure></p>
+<p><strong>5. 设置用户信息</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 设置用户名</span><br><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line"># 设置邮箱</span><br><span class="line">git config --global user.email &quot;yourmail@gmail.com&quot;</span><br></pre></td></tr></table></figure></p>
 <p>设置完成后，即完成了 Git 的相关配置。</p>
 <h3 id="四、安装-Node-js"><a href="#四、安装-Node-js" class="headerlink" title="四、安装 Node.js"></a><strong>四、安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></strong></h3><p>我们所用的 Hexo 框架是依赖于 Node.js 环境的，该环境下的 npm 工具可以用于安装 Hexo。</p>
 <h3 id="五、安装-Hexo"><a href="#五、安装-Hexo" class="headerlink" title="五、安装 Hexo"></a><strong>五、安装 Hexo</strong></h3><p>在 Git 和 Node.js 齐备后，就可以通过在 Git Bash 中执行 npm 代码来安装 Hexo 了。</p>
@@ -259,7 +259,7 @@
 <p>保存后，关闭该文件。此时已经完成了 Hexo 与 GitHub Pages 的关联。<br><strong>2. 部署 Hexo 博客到 GitHub Pages</strong><br>在 BLOG 文件夹下打开 GitBash ，依次执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 清空静态页面</span><br><span class="line">hexo clean</span><br><span class="line"># 生成静态页面</span><br><span class="line">hexo g</span><br><span class="line"># 部署</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <p>其中可能会弹框提示输入密码，输入此前设置的 passphrase 密码即可。一切就绪后，在浏览器输入 <code>http://yourname.github.io</code>  就可以访问博客了。<br>如果在输入 <code>hexo d</code> 后提示 <code>ERROR Deployer not found: git</code> ，可输入 <code>npm install hexo-deployer-git --save</code> 解决。</p>
 <h3 id="七、购买域名"><a href="#七、购买域名" class="headerlink" title="七、购买域名"></a><strong>七、购买域名</strong></h3><p><strong>1. 挑选域名并付款</strong><br>在<a href="https://www.qcloud.com/act/event/dnspod_baidu.html" target="_blank" rel="noopener">腾讯云的域名服务</a>中挑选域名并付款，建议购买 .com 后缀的域名。<br>注意购买时长，建议购买3~5年。在此假设购买的域名为 yourname.com。<br><strong>2. 腾讯云的实名认证</strong><br>在腾讯云-&gt;帐号中心-&gt;<a href="https://console.cloud.tencent.com/developer" target="_blank" rel="noopener">帐号信息</a>中先完成腾讯云账户的实名认证。<br><strong>3. 域名的实名认证</strong><br>在<a href="https://console.cloud.tencent.com/domain/mydomain" target="_blank" rel="noopener">域名管理</a>中，<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="域名管理"></p>
-<h3 id="八、绑定域名和博客"><a href="#八、绑定域名和博客" class="headerlink" title="八、绑定域名和博客"></a><strong>八、绑定域名和博客</strong></h3><p><strong>1. 腾讯云方面的配置</strong><br>在<a href="https://console.cloud.tencent.com/domain/mydomain" target="_blank" rel="noopener">域名管理</a>中，点击<strong>解析</strong>，照搬下图添加三条记录。其中 CNAME 对应的记录值填写为 <code>yourname.github.io</code> 。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="DNS设置"><br><strong>2. GitHub 方面的配置</strong><br>进入 GitHub Pages 对应的仓库 github.com/yourname/yourname.github.io，点击 Settings，将页面下拉，在 GitHub Pages 一栏的 Custom domain 中填写自己的域名 <code>yourname.com</code> ，然后保存。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="GitHub设置"><br><strong>3. Hexo 方面的配置</strong><br>在BLOG/source文件夹下新建文本文档，在其中添加购买的域名，保存后退出。将此文件重命名为 CNAME ，注意这里去掉了原来的 .txt 后缀。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="新建CNAME"></p>
+<h3 id="八、绑定域名和博客"><a href="#八、绑定域名和博客" class="headerlink" title="八、绑定域名和博客"></a><strong>八、绑定域名和博客</strong></h3><p><strong>1. 腾讯云方面的配置</strong><br>在<a href="https://console.cloud.tencent.com/domain/mydomain" target="_blank" rel="noopener">域名管理</a>中，点击<strong>解析</strong>，照搬下图添加三条记录。其中 CNAME 对应的记录值填写为 <code>yourname.github.io</code> 。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="DNS设置"><br><strong>2. GitHub 方面的配置</strong><br>进入 GitHub Pages 对应的仓库 github.com/yourname/yourname.github.io，点击 Settings，将页面下拉，在 GitHub Pages 一栏的 Custom domain 中填写自己的域名 <code>yourname.com</code> ，然后保存。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="GitHub设置"><br><strong>3. Hexo 方面的配置</strong><br>在 BLOG/source 文件夹下新建文本文档，在其中添加购买的域名，保存后退出。将此文件重命名为 CNAME ，注意这里去掉了原来的 .txt 后缀。<br><img src="https://www.zybuluo.com/static/img/logo.png" alt="新建CNAME"></p>
 <h3 id="九、Hello-World"><a href="#九、Hello-World" class="headerlink" title="九、Hello World"></a><strong>九、Hello World</strong></h3><p>至此就<strong>大功告成</strong> (๑•̀ㅂ•́)و✧，当在浏览器中输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yourname.github.io</span><br></pre></td></tr></table></figure></p>
 <p>就会自动转到自己购买的域名了。此时显示的是 Hexo 默认主题的博客页面，其中有一片题为 Hello World 的文章。<br>关于如何更换主题、更新文章等关于 Hexo 的操作，参看<br><a href="https://www.jianshu.com/p/b7886271e21a" target="_blank" rel="noopener">Hexo安装和配置</a><br><a href="https://www.jianshu.com/p/863f3f2d1733" target="_blank" rel="noopener">使用github+Hexo人人都能拥有一个美美的博客</a><br><a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">手把手教你用Hexo+Github 搭建属于自己的博客</a></p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a><strong>后记</strong></h2><p>搭建静态博客还是挺麻烦的 w(ﾟДﾟ)w（<del>mmp的我肠子都悔青了</del>）。在完成上述基本搭建之后，我还安装了下列软件：</p>
@@ -267,7 +267,6 @@
 <li><a href="https://www.zybuluo.com/" target="_blank" rel="noopener">Cmd Markdown</a> 编辑器，用于写文章。</li>
 <li><a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a>，用作存储文章中的插图并生成外链。</li>
 <li><a href="https://desktop.github.com/" target="_blank" rel="noopener">GitHub Desktop</a>，GitHub 的客户端工具。</li>
-<li></li>
 </ul>
 
     </article>
